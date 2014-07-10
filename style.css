@@ -1,0 +1,60 @@
+body {
+    color: rgb(80,80,80);
+    padding: 20px 10px;
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    text-align:center;
+}
+.cube {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+#answers {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.option {
+    cursor: pointer;
+    list-style-type: none;
+    display: inline-block;
+    background: rgb(80,80,80);
+    color: rgb(255,255,255);
+    padding: 8px 14px;
+    margin: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.blocScore {
+    background: rgb(190,190,190);
+    color: rgb(255,255,255);
+    display: table;
+    text-align: center;
+    margin: 30px auto;
+}
+.blocScore p {
+    padding: 0 40px;
+}
+#score {
+    font-weight: bold;
+    display: block;
+    font-size:20 pt;
+}
+.bravo, .faux {
+    display:none;
+    position:absolute;
+    left:0; right:0; top:0; bottom:0;
+    background: rgba(0,0,0,0.6);
+}
+.bravo .inner, .faux .inner {
+    background:white;
+    padding: 20px 40px;
+    margin: 120px auto;
+    display: table;
+}
+.bravo.active, .faux.active {
+    display:block;
+}
