@@ -66,14 +66,14 @@ function launch() {
             jQuery("#score").text(score);
         }
         else {
-            jQuery(".faux").addClass("active");
+            jQuery(".faux").addClass("active");            
+            jQuery("#rightAnswer").empty().text(rightAnswer).css("color", rightAnswer);
         }
     });
     
     jQuery(".relaunch").click(function(){
         launch();
-        jQuery(".faux").removeClass("active");
-        jQuery(".bravo").removeClass("active");
+        jQuery(".active").removeClass("active");
     });
 }
 

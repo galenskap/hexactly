@@ -1,6 +1,6 @@
 body {
     color: rgb(80,80,80);
-    padding: 20px 10px;
+    padding: 50px 10px 20px;
     font-family: 'Oswald', sans-serif;
 }
 h1 {
@@ -50,11 +50,32 @@ h1 {
     background: rgba(0,0,0,0.6);
 }
 .bravo .inner, .faux .inner {
-    background:white;
+    background: white;
     padding: 20px 40px;
     margin: 120px auto;
     display: table;
+    font-size: 20pt;
+    text-align: center;
+}
+.relaunch {
+    display: block;
+    cursor: pointer;
+    padding: 4px 10px;
+    background: rgb(190,190,190);
+    color: white;
+    margin-top: 10px;
+}
+.relaunch:hover {
+    background: rgb(255,150,20);
 }
 .bravo.active, .faux.active {
     display:block;
 }
+.faux .details {
+    font-size: 14pt;
+    display: block;
+    margin-top: 10px;
+}
+.faux #rightAnswer {
+    font-size: 14pt;
+/*}*/
