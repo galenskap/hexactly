@@ -26,7 +26,6 @@ function randomRgb() {
 function makeColor() {
     var colorRgb = randomRgb();
     var colorHexa = rgb2hex(colorRgb);
-    console.log(colorRgb + " : " + colorHexa);
     // Fill the square
     jQuery("#couleur").css("background-color",colorRgb);
     return colorHexa;
@@ -52,30 +51,60 @@ function makeAnswers(rightColor) {
     
 // Launch everything
 function launch() {
+    level ++;
+    jQuery("#level").text(level-1);
     rightAnswer = makeColor();
     makeAnswers(rightAnswer);
     
     // When selecting an answer
     jQuery(".option").click(function(){
         var answer = jQuery(this).text();
-        console.log(answer);
         if (answer == rightAnswer) {
             jQuery(".bravo").addClass("active");
-            var score = parseInt(jQuery("#score").text());
-            score = score +1;
+            score ++;
             jQuery("#score").text(score);
         }
         else {
             jQuery(".faux").addClass("active");            
             jQuery("#rightAnswer").empty().text(rightAnswer).css("color", rightAnswer);
         }
+        if (level == 10) {
+            // track the time 'cause this is the end, my friend
+            endGame = (new Date).getTime();
+            chrono = calcTime(startGame, endGame);
+            jQuery(".scoreResult").append(score);
+            jQuery(".timerResult").append(chrono);
+            jQuery(".daGame").css("display", "none");
+            jQuery(".daEnd").css("display", "block");
+        }
     });
     
     jQuery(".relaunch").click(function(){
         launch();
         jQuery(".active").removeClass("active");
+        console.log("level: " +level);
+        console.log("score: " +score);
+        console.log("end: " +endGame);
     });
 }
 
-// We need to launch everything a first time
-launch();
+// We need to launch everything a first time (after the "Start" click)
+jQuery("#startLink").click(function(){
+    level = 0;
+    score = 0;
+    startGame = (new Date).getTime();
+    launch();
+    jQuery(".daGame").css("display", "block");
+    jQuery(".daIntro").css("display", "none");
+});
+
+// Calculate time spent on the game
+function calcTime(startGame, endGame) {
+    var difference = endGame - startGame;
+    var totalSeconds = Math.floor(difference/1000);
+    var left = totalSeconds%60;
+    if(left.toString().length == 1) {left = "0" + left.toString();}
+    var minutes = (totalSeconds-left)/60;
+    var totalTime = minutes + '\'' + left + '"';
+    return totalTime;
+}

@@ -1,10 +1,55 @@
 body {
     color: rgb(80,80,80);
-    padding: 50px 10px 20px;
+    padding: 20px 10px;
     font-family: 'Oswald', sans-serif;
 }
-h1 {
+h1, h2 {
     text-align:center;
+}
+h1 {
+    font-size: 6em;
+    color: #ea4f3f;
+    margin-bottom: 0;
+}
+h2 {
+    font-style: italic;
+}
+.daIntro {
+    text-align: center;
+    margin:0 auto;
+    max-width: 500px;
+}
+.daIntro .baseline{
+    font-style: italic;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+}
+.daIntro .rules{
+    text-align: left;
+    font-size: 1.2em;
+}
+#startLink {
+    padding: 8px 30px;
+    cursor: pointer;
+    font-size: 2em;
+    text-transform: uppercase;    
+    color: rgb(255,255,255);
+    display: table;
+    text-align: center;
+    margin: 50px auto 30px;
+    background: rgb(80,80,80);
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+#startLink:hover {
+    background: #ea4f3f;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
 }
 .cube {
     width: 200px;
@@ -40,22 +85,27 @@ h1 {
 }
 #score {
     font-weight: bold;
-    display: block;
     font-size:20 pt;
 }
-.bravo, .faux {
+.popin {
     display:none;
     position:absolute;
     left:0; right:0; top:0; bottom:0;
     background: rgba(0,0,0,0.6);
 }
-.bravo .inner, .faux .inner {
+.popin .inner {
     background: white;
     padding: 20px 40px;
     margin: 120px auto;
     display: table;
     font-size: 20pt;
     text-align: center;
+}
+.daEnd .inner {
+    font-size: 16pt;
+}
+.fini {
+    font-size: 2em;
 }
 .relaunch {
     display: block;
@@ -68,7 +118,7 @@ h1 {
 .relaunch:hover {
     background: rgb(255,150,20);
 }
-.bravo.active, .faux.active {
+.popin.active {
     display:block;
 }
 .faux .details {
@@ -76,6 +126,19 @@ h1 {
     display: block;
     margin-top: 10px;
 }
+.daEnd .details {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.8em;
+}
+.scoreResult, .timerResult {
+    font-size: 1.6em;
+    padding: 0 5px;
+}
 .faux #rightAnswer {
     font-size: 14pt;
-/*}*/
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+}

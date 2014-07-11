@@ -222,14 +222,48 @@
 				"buffer_size": 84,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"contents": "body {\n    color: rgb(80,80,80);\n    padding: 80px 10px 20px;\n    font-family: 'Oswald', sans-serif;\n}\nh1 {\n    text-align:center;\n}\n.cube {\n    width: 200px;\n    height: 200px;\n    margin: 20px auto;\n    border-radius: 50%;\n}\n#answers {\n    text-align: center;\n    margin: 0;\n    padding: 0;\n}\n.option {\n    cursor: pointer;\n    list-style-type: none;\n    display: inline-block;\n    background: rgb(80,80,80);\n    color: rgb(255,255,255);\n    padding: 8px 14px;\n    margin: 13px;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n}\n.blocScore {\n    background: rgb(190,190,190);\n    color: rgb(255,255,255);\n    display: table;\n    text-align: center;\n    margin: 30px auto;\n}\n.blocScore p {\n    padding: 0 40px;\n}\n#score {\n    font-weight: bold;\n    display: block;\n    font-size:20 pt;\n}\n.bravo, .faux {\n    display:none;\n    position:absolute;\n    left:0; right:0; top:0; bottom:0;\n    background: rgba(0,0,0,0.6);\n}\n.bravo .inner, .faux .inner {\n    background: white;\n    padding: 20px 40px;\n    margin: 120px auto;\n    display: table;\n    font-size: 20pt;\n    text-align: center;\n}\n.relaunch {\n    display: block;\n    cursor: pointer;\n    padding: 4px 10px;\n    background: rgb(190,190,190);\n    color: white;\n    margin-top: 10px;\n}\n.relaunch:hover {\n    background: rgb(255,150,20);\n}\n.bravo.active, .faux.active {\n    display:block;\n}\n.faux .details {\n    font-size: 14pt;\n    display: block;\n    margin-top: 10px;\n}\n.faux #rightAnswer {\n    font-size: 14pt;\n/*}*/",
+			"file": "style.css",
+			"file_size": 1560,
+			"file_write_time": 130494694527397056,
+			"settings":
+			{
+				"buffer_size": 1480,
+				"line_ending": "Windows",
+				"name": "body {"
+			}
+		},
+		{
+			"file": "script.js",
+			"settings":
+			{
+				"buffer_size": 2378,
+				"line_ending": "Windows",
+				"name": "// Function to convert hex format to a rgb color"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1644,
+				"line_ending": "Windows",
+				"name": "<!DOCTYPE html>"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 127.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"html",
+				"Snippet: html5-bootstrap"
+			],
 			[
 				"radio",
 				"Snippet: HTML - Input:radio"
@@ -303,7 +337,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -320,6 +354,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Deb/AppData/Local/Temp/fz3temp-3/README 2.txt",
 		"/C/Users/Deb/Documents/Sites/hexactly_old/README.md",
 		"/C/Users/Deb/Documents/tempo_deb_coenobia/connexion.php",
 		"/C/Users/Deb/AppData/Local/Temp/fz3temp-1/footer.phtml",
@@ -446,8 +481,7 @@
 		"/C/otherprograms/apache-tomcat-4.1.40/apache-tomcat-4.1.40/webapps/ROOT/primagaz/16/static/onglet_rose.png",
 		"/C/Users/Deb/AppData/Local/Temp/fz3temp-1/.htaccess",
 		"/C/Users/Deb/AppData/Local/Temp/fz3temp-1/system.log",
-		"/C/otherprograms/apache-tomcat-4.1.40/apache-tomcat-4.1.40/webapps/ROOT/primagaz/16/static/styles2.css",
-		"/C/Users/Deb/Documents/Sites/blogCW/filok/include-cw/js/bind_polyfill.js"
+		"/C/otherprograms/apache-tomcat-4.1.40/apache-tomcat-4.1.40/webapps/ROOT/primagaz/16/static/styles2.css"
 	],
 	"find":
 	{
@@ -455,7 +489,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"",
@@ -614,7 +648,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -629,8 +663,8 @@
 						"selection":
 						[
 							[
-								50,
-								50
+								51,
+								19
 							]
 						],
 						"settings":
@@ -685,6 +719,240 @@
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended Bright.tmTheme",
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 1480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "body {",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended Bright.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "script.js",
+					"settings":
+					{
+						"buffer_size": 2378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2378,
+								2378
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "// Function to convert hex format to a rgb color",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended Bright.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 363.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								633,
+								633
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "<!DOCTYPE html>",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Extended Bright.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -776,6 +1044,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/C/Users/Deb/Documents/Sites/drupal-commons/drupal-commons.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

@@ -24,28 +24,52 @@
     <div class="container">
 
       <div class="inner">
-        <h1>Quel est le code hexadécimal de cette couleur ?</h1>
-        <div class="cube" id="couleur"></div>
-        <ul id="answers"></ul>
-        <div class="blocScore">
-            <p>Score :
-                <span id="score">0</span></p>
+
+        <div class="daIntro">
+          <h1>Hexactly!</h1>
+          <p class="baseline">Jeu pour bâtisseurs de sites</p>
+          <p class="rules">
+            Le but du jeu est de deviner le code hexadécimal de 10 couleurs générées aléatoirement. Pour chaque couleur, 4 possibilités sont proposées. Essayez de faire le meilleur score en un temps record !
+          </p>
+          <div id="startLink">Je joue !</div>
         </div>
-        <div class="bravo">
-            <p class="inner">Bravo !
-            <span class="relaunch">Relancer</span></p>
+
+        <div class="daGame" style="display:none;">
+          <h2>Quel est le code de cette couleur ?</h2>
+          <div class="cube" id="couleur"></div>
+          <ul id="answers"></ul>
+          <div class="blocScore">
+              <p>Score :
+                <span id="score">0</span>
+                 / 
+                <span id="level"></span>
+          </div>
+          <div class="bravo popin">
+              <p class="inner">Hexactement !
+              <span class="relaunch">Suivant</span></p>
+          </div>
+          <div class="faux popin">
+              <p class="inner">
+                  C'est faux !
+                  <span class="details">La réponse était :</span>
+                  <span id="rightAnswer"></span>
+                  <span class="relaunch">Suivant</span>
+              </p>
+          </div>
         </div>
-        <div class="faux">
-            <p class="inner">
-                C'est faux !
-                <span class="details">La réponse était :</span>
-                <span id="rightAnswer"></span>
-                <span class="relaunch">Relancer</span>
-            </p>
+
+        <div class="daEnd popin" style="display:none;">
+          <p class="inner">
+            <span class="fini">Fini !</span>
+            <span class="details">Votre score :</span>
+            <span class="scoreResult"></span> bonne(s) réponse(s) en 
+            <span class="timerResult"></span>
         </div>
+
       </div>
 
       <footer>
+        Réalisé par <a href="http://www.canal-web.fr">Canal-Web</a>
       </footer>
 
     </div> <!-- /container -->
